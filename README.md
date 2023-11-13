@@ -440,6 +440,23 @@ for i in range(a): #ciclo principale, gestisce le righe dell'albero
  ******** 
 
 ```
+
+### esercizi:
+Crea un programma che visualizzi questo output:
+```shell
+h
+he
+hel
+hell
+hello
+hello 
+hello w
+hello wo
+hello wor
+hello worl
+hello world
+```
+soluzione: https://onlinegdb.com/qxtTXJAWVW
 ## Istruzioni utili nei cicli
 
 ### istruzione break
