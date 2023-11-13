@@ -373,6 +373,73 @@ C
 >**NOTA BENE**
 >Abbiamo usato una parola che è stata stampata in più iterazioni. Python l'ha trattata come un normalissimo dato.
 
+
+### L'albero di asterischi
+Programmiamo la parte sinistra:
+```python
+a = 5
+for i in range(a): #per ogni riga
+    for k in range(i): #metti un numero di asterischi uguale al numero di riga
+        print("*", end="")
+    
+    print(" ")
+
+```
+
+```shell
+* 
+** 
+*** 
+**** 
+```
+
+ora la parte destra:
+```python
+a = 5
+for i in range(a):
+    for j in range(a,i,-1): # aggiungiamo lo spazio dal bordo
+        print(" ", end="")
+
+    for j in range(i):
+        print("*", end="")
+
+    print(" ")
+
+
+```
+
+```shell   
+    * 
+   ** 
+  *** 
+ **** 
+```
+Creiamo un programma che con dei cicli for disegni l'albero degli asterischi:
+```python
+a = 5
+for i in range(a): #ciclo principale, gestisce le righe dell'albero
+    for j in range(a,i,-1): #questo ciclo mette gli spazi tra il bordo e l'albero
+        print(" ", end="")
+
+    for j in range(i): #questo disegna la parte destra di asterischi
+        print("*", end="")
+
+    for k in range(i): # e questo la parte sinistra
+        print("*", end="")
+    
+    print(" ")
+
+
+```
+
+```shell
+      
+    ** 
+   **** 
+  ****** 
+ ******** 
+
+```
 ## Istruzioni utili nei cicli
 
 ### istruzione break
@@ -472,6 +539,9 @@ A cosa possono servire le funzioni `break` e `continue`? Dopotutto in questi ese
 
 
 
+<br>
+<br>
+<br>
 
 
 
