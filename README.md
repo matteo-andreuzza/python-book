@@ -642,5 +642,3 @@ A cosa possono servire le funzioni `break` e `continue`? Dopotutto in questi ese
 
 
 
-
-Non te l'ho mai detto, non so neanche se abbia senso dirtelo, ma infine.... Te vojo ben ❣️...
